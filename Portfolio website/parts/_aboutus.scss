@@ -1,0 +1,28 @@
+.aboutus {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  .aboutus-image {
+    border-radius: 50%;
+    border: $round-image-border solid $section-color-alternate;
+  }
+
+  @include media-breakpoint-up(md) {
+    .aboutus-list {
+      background: linear-gradient(
+        to right, 
+        white 0%, 
+        white calc(50% - 1px), 
+        $section-color-alternate calc(50% - 1px),
+        $section-color-alternate calc(50% + 1px), 
+        white calc(50% + 1px), 
+        white 100%
+      );
+
+      .row:last-child {
+        background-color: white;
+      }
+    }
+  }
+  
+}

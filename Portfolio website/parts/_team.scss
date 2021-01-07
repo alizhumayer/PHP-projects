@@ -1,0 +1,26 @@
+.team {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  background-color: $section-color-alternate;
+
+  .team-image {
+    border-radius: 50%;
+    border: $round-image-border solid white;
+  }
+
+  .team-social-media {
+    color: black;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    text-align: center;
+    margin: 0.4rem 0.2rem 0.2rem 0.2rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

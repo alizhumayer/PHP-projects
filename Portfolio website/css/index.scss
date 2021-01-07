@@ -1,0 +1,63 @@
+$font-size-base: 1rem;
+$primary: #fed136;
+
+$header-jumbotron-height: 300px;  
+
+$section-padding: 120px;
+$section-color-alternate: #f7f7f7;
+$round-image-border: 5px;
+$page-menu-size: 175px;
+
+@import "../lib/bootstrap/scss/bootstrap";
+
+@import "../parts/header";
+@import "../parts/services";
+@import "../parts/portfolio";
+@import "../parts/aboutus";
+@import "../parts/team";
+@import "../parts/contact";
+@import "../parts/footer";
+
+
+/** Page Menu */
+
+body {
+  overflow-x: hidden;
+}
+
+#page {
+  position: relative;
+  left: 0px;
+  transition: 1s all;
+  transform: translate(0px, 0px);
+
+  &.mobile-nav-opened {
+    transform: translate(-$page-menu-size, 0px);
+  }
+
+  .mobile-nav {
+    position: fixed;
+    right: -$page-menu-size;
+    top: 0px;
+    bottom: 0px;
+    width: $page-menu-size;
+    background-color: $section-color-alternate;
+  }
+
+  .mobile-nav-link {
+    color: black;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    background-color: $section-color-alternate;
+
+    &:last-child {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px; 
+    }
+
+    &:first-child {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px; 
+    }
+  } 
+}

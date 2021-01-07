@@ -1,0 +1,9 @@
+.contact-delete-form {
+  display: inline;
+}
+
+.contact-delete-form button {
+  padding: 0px;
+  border: 0px solid transparent;
+  vertical-align: inherit;
+}

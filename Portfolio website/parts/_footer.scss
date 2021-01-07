@@ -1,0 +1,16 @@
+.footer {
+  
+  .footer-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0.2rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

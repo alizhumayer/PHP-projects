@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Bitte geben Sie Ihr Passwort ein!"
+AuthUserFile "/Applications/MAMP/htdocs/komplettes-projekt/Teil 21/admin/.htpasswd"
+Require valid-user

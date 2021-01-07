@@ -1,0 +1,28 @@
+
+#content {
+background-color: orange;
+margin: 2% 5%;
+padding: 20 px;
+
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    padding: 3 px;
+    
+}
+
+#menu ul li a:hover {
+    background-color: green;
+    
+}

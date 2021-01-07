@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+
+
+<script>
+
+	$(document).ready(function(){
+
+		$("#carz").keyup(function(){
+
+
+		var search = "example_stuf";
+
+		$.ajax({
+
+			url: "test.php",
+			data: {search: search},
+			type: 'POST',
+			success: function(data){
+
+				if(!data.error){
+
+					alert(data);
+
+
+				} else {
+
+					alert("not receving data");
+
+				}
+
+
+			}
+
+
+		});
+
+
+
+	});
+	
+
+});
+
+	
+
+</script>
+
+
+
+<input id="carz" type="text">
+
+
+<div id='#container'>
+	
+</div>
+
+
+
+
+
+</body>
+</html>

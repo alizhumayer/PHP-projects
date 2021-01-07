@@ -1,0 +1,14 @@
+.contact {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  background-color: #222222;
+  color: white;
+
+  .contact-message {
+    height: 6rem;
+
+    @include media-breakpoint-up(sm) {
+      height: 100%;
+    }
+  }
+}
